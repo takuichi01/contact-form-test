@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f2ede6;
+    color: #4c4032;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+.header__title {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.thanks {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.thanks__message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.thanks__message p {
+    font-size: 16px;
+    color: #666;
+}
+
+.thanks__back {
+    margin-top: 30px;
+}
+
+.thanks__button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,76 @@
+.contact {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact__heading {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* フォーム */
+.form__row {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.form__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form__required {
+    color: #e56e6e;
+    font-size: 0.9rem;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    font-size: 1rem;
+}
+
+/* グループ入力 */
+.form__group--double {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__group--triple {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ラジオボタン */
+.form__radio-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+
+.form__textarea {
+    resize: vertical;
+}
+
+/* ボタン */
+.form__row--center {
+    text-align: center;
+}
+
+.form__submit {
+    background-color: #7a6a58;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer; }

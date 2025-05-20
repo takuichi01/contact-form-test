@@ -1,0 +1,159 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #5e4c3f;
+}
+
+.admin__header {
+    text-align: center;
+}
+
+.admin__title {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admin__subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.admin__logout-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #bbaea4;
+    text-decoration: none;
+    border: 1px solid #bbaea4;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-form__input,
+.search-form__select {
+    padding: 8px;
+    border: 1px solid #dcd4ca;
+    border-radius: 4px;
+}
+
+.search-form__button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8d7b6e;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form__button--reset {
+    background-color: #e4dcd4;
+    color: #5e4c3f;
+}
+
+.admin__export-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 6px 14px;
+    background-color: #e4dcd4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #5e4c3f;
+}
+
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-table__head {
+    background-color: #8d7b6e;
+    color: white;
+}
+
+.contact-table__row {
+    border-bottom: 1px solid #eee;
+}
+
+.contact-table__header,
+.contact-table__cell {
+    padding: 12px;
+    text-align: left;
+}
+
+.contact-table__detail-button {
+    background: none;
+    border: 1px solid #dcd4ca;
+    padding: 5px 10px;
+    color: #5e4c3f;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.pagination .page-link {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination .active .page-link {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 中央にする */
+    z-index: 1001;
+    /* overlay より高く */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
