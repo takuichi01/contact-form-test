@@ -63,7 +63,7 @@
         {{-- ボタン行（flexで横並び） --}}
         <div class="confirm-form__row confirm-form__row--buttons" style="display: flex; gap: 1rem;">
             {{-- 送信ボタン（submit処理へ） --}}
-            <form action="/submit" method="POST">
+            <form action="{{ route('contact.thanks') }}" method="POST">
                 @csrf
                 @foreach ($data as $key => $value)
                 <input type="hidden" name="{{ $key }}" value="{{ $value }}">

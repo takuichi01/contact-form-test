@@ -19,8 +19,7 @@ Route::controller(ContactController::class)->group(function () {
     Route::get('/', 'index');
     Route::post('/', 'index')->name('contact.index');
     Route::post('/confirm', 'confirm')->name('contact.confirm');
-    Route::post('/submit', 'submit')->name('contact.submit');
-    Route::post('/thanks', 'thanks')->name('contact.thanks');
+    Route::post('/thanks', 'submit')->name('contact.thanks');
 });
 Route::middleware('auth')->group(function() {
     Route::get('/admin', [AdminController::class, 'admin']);

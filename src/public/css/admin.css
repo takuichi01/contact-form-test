@@ -6,6 +6,16 @@ body {
     color: #5e4c3f;
 }
 
+.header__logout-link {
+    margin-left: auto;
+    text-decoration: none;
+    color: #b8a99c;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+}
+
 .admin__header {
     text-align: center;
 }

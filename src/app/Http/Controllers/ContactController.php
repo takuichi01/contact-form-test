@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Category;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -26,7 +27,7 @@ class ContactController extends Controller
         return view('index', ['categories' => $categories]);
     }
 
-    public function confirm(Request $request)
+    public function confirm(ContactRequest $request)
     {
         // バリデーション（必要であれば追加）
         $data = $request->all();
@@ -34,7 +35,7 @@ class ContactController extends Controller
         return view('confirm', compact('data'));
     }
 
-    public function submit(Request $request)
+    public function submit(ContactRequest $request)
     {
         $categoryContent = $request->input('category');
         $categoryID = Category::where('content', $categoryContent)->first();
@@ -48,23 +49,6 @@ class ContactController extends Controller
             $request->input('third_tel'),
         ]);
 
-        // 実際の保存処理など
-        // Contact::create($request->all());
-    /*$validated = $request->validate([
-        'last_name' => 'required|string|max:255',
-        'first_name' => 'required|string|max:255',
-        'gender' => 'required|in:1,2,3',
-        'email' => 'required|email',
-        'first_tel' => 'nullable|string|max:5',
-        'second_tel' => 'nullable|string|max:5',
-        'third_tel' => 'nullable|string|max:5',
-        'address' => 'required|string|max:255',
-        'building' => 'nullable|string|max:255',
-        'category_id' => 'required|exists:categories,id',
-        'detail' => 'required|string',
-    ]);*/
-
-        // 4. 保存
         Contact::create($data);
 
         return view('thanks');

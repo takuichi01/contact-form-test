@@ -74,3 +74,8 @@
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer; }
+
+.error-message {
+    color: #e56e6e;
+    background-color: #cccccc;
+}

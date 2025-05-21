@@ -7,14 +7,13 @@
 @section('right-top__link')
 <form action="/logout" class="header__login" method="post">
     @csrf
-    <button class="header__login-link">logout</button>
+    <button class="header__logout-link">logout</button>
 </form>
 @endsection
 
 
 @section('content')
 <header class="admin__header">
-    <h1 class="admin__title">FashionablyLate</h1>
     <h2 class="admin__subtitle">Admin</h2>
 </header>
 

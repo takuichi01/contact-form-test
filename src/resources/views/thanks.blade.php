@@ -1,17 +1,24 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="ja">
 
-@section('css')
-<link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
-@endsection
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
+    <title>thanks</title>
+</head>
 
-@section('content')
-<div class="thanks">
-    <div class="thanks__message">
-        <h2>お問い合わせありがとうございました</h2>
-        <p>送信内容を受け付けました。確認の上、担当者よりご連絡いたします。</p>
+<body>
+    <div class="content">
+        <div class="content__message">
+            お問い合わせありがとうございました
+        </div>
+        <a href="/" class="button__home">
+            HOME
+        </a>
     </div>
-    <div class="thanks__back">
-        <a href="{{ route('contact.index') }}" class="thanks__button">トップへ戻る</a>
-    </div>
-</div>
-@endsection
+</body>
+
+</html>
